@@ -1,0 +1,15 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "chatbot-client"
+version = "0.1.0"
+description = "Reusable Python client for the AI chatbot REST API"
+requires-python = ">=3.10"
+dependencies = [
+    "httpx>=0.27,<1.0",
+]
+
+[tool.setuptools.packages.find]
+include = ["chatbot_client*"]
